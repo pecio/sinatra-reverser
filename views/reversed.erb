@@ -19,7 +19,7 @@ pre {
   </head>
   <body>
     <p>Your reversed string:</p>
-    <pre><%= params[:post][:string].chomp.reverse %></pre>
+    <pre><%= params[:post][:string].delete("\r").reverse %></pre>
     <p><a href="/">Back</a> to string input.</p>
   </body>
 </html>
