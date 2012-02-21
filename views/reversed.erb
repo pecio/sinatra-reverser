@@ -3,12 +3,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en" xml:lang="en">
 <html>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <style type="text/css">
+body {
+  font-family: sans-serif;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+pre {
+  background: #eee;
+}
+  </style>
   <head>
     <title>String reverser</title>
   </head>
   <body>
     <p>Your reversed string:</p>
-    <pre><%= params[:post][:string].reverse %></pre>
+    <pre><%= params[:post][:string].chomp.reverse %></pre>
     <p><a href="/">Back</a> to string input.</p>
   </body>
 </html>

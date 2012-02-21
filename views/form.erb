@@ -3,6 +3,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en" xml:lang="en">
 <html>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <style type="text/css">
+body {
+  font-family: sans-serif;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+} 
+textarea {
+  font-family: monospace;
+}
+  </style>
   <head>
     <title>String reverser</title>
   </head>
@@ -10,7 +21,7 @@
     <form method="post" action="/reversed" accept-charset="utf-8">
       <label>String to reverse:<br/>
         <textarea name="post[string]" id="string" rows="5" cols="40"/></textarea>
-      </label>
+      </label><br/>
       <input type="submit" value="Reverse"/>
     </form>
   </body>
