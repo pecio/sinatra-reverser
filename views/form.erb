@@ -17,8 +17,8 @@ textarea {
   <head>
     <title>String reverser</title>
   </head>
-  <body>
-    <form method="post" action="/reversed" accept-charset="utf-8">
+  <body onload="document.forms.entry.string.focus()">
+    <form method="post" id="entry" action="/reversed" accept-charset="utf-8">
       <label>String to reverse:<br/>
         <textarea name="post[string]" id="string" rows="5" cols="40"/></textarea>
       </label><br/>
