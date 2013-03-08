@@ -27,12 +27,12 @@ textarea {
   <head>
     <title>String reverser</title>
   </head>
-  <body onload="document.forms.entry.string.focus()">
+  <body>
     <form method="post" id="entry" action="/reversed" accept-charset="utf-8">
       <label>String to reverse:<br/>
         <textarea name="post[string]" id="string"
           placeholder="Enter text to reverse. Press Control-Enter to submit."
-          rows="5" cols="40"/></textarea>
+          autofocus="autofocus" rows="5" cols="40"/></textarea>
       </label><br/>
       <input id="submit" type="submit" value="Reverse"/>
     </form>
