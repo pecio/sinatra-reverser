@@ -14,6 +14,17 @@ textarea {
   font-family: monospace;
 }
   </style>
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#string').keydown(function (e) {
+        if (e.ctrlKey && e.keyCode == 13) {
+          $('#submit').click();
+          return false;
+        }
+      });
+    });
+  </script>
   <head>
     <title>String reverser</title>
   </head>
@@ -22,7 +33,7 @@ textarea {
       <label>String to reverse:<br/>
         <textarea name="post[string]" id="string" rows="5" cols="40"/></textarea>
       </label><br/>
-      <input type="submit" value="Reverse"/>
+      <input id="submit" type="submit" value="Reverse"/>
     </form>
   </body>
 </html>
